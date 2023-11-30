@@ -1,0 +1,40 @@
+body {
+  font-family: 'Yekan Bakh FaNum';
+  font-size: 16px;
+  text-align: right;
+  direction: rtl;
+  font-weight: 300;
+}
+
+p,
+span,
+div,
+strong {
+  line-height: 1.8em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Yekan Bakh FaNum';
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+    font-size: 0.875em;
+  }
+}

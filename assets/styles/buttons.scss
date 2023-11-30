@@ -1,0 +1,45 @@
+@import "@constants/color-variables.scss";
+@import "@mixins/transition";
+@import "@mixins/media-query";
+
+.btn {
+  border-width: 1px;
+  border-style: solid;
+}
+.btn--primary{
+  height:  56px;
+  padding: 16px 48px 16px 48px;
+  border-radius: 32px;
+  border-color: #C00004!important;
+  background-color: #C00004!important;
+  color: white!important;
+  @include is-mobile{
+    padding: 12px 32px 12px 32px;
+  }
+}
+.btn--primary:hover{
+  height:  56px;
+  padding: 16px 48px 16px 48px;
+  border-radius: 32px;
+  border: solid 1px #C00004!important;
+  background-color: white!important;
+  color: #C00004!important;
+}
+.btn--outline--primary{
+  height:  56px;
+  padding: 16px 48px 16px 48px;
+  border-radius: 32px;
+  border-color: #E20054;
+  background-color: white;
+  color: #E20054;
+  @include is-not-desktop{
+    padding: 12px 32px;
+  }
+}
+.btn--outline--primary:hover{
+  height:  56px;
+  padding: 16px 48px 16px 48px;
+  border-radius: 32px;
+  background-color: #E20054;
+  color: white;
+}

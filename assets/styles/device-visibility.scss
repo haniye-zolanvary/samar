@@ -1,0 +1,92 @@
+.show-in-mini-mobile {
+  @include is-desktop {
+    display: none !important;
+  }
+
+  @include is-tablet {
+    display: none !important;
+  }
+
+  @include is-mobile {
+    display: none !important;
+  }
+}
+
+.show-in-mobile {
+  @include is-desktop {
+    display: none;
+  }
+
+  @include is-tablet {
+    display: none !important;
+  }
+}
+
+.show-in-mini-mobile-and-mobile {
+  @include is-tablet {
+    display: none !important;
+  }
+  @include is-desktop {
+    display: none !important;
+  }
+}
+
+.show-in-tablet {
+  @include is-desktop {
+    display: none;
+  }
+
+  @include is-mobile-and-landscape {
+    display: none !important;
+  }
+
+  @include is-desktop {
+    display: none !important;
+  }
+
+  @include is-mini-mobile {
+    display: none !important;
+  }
+}
+
+.show-in-mobile-and-tablet {
+  @include is-desktop {
+    display: none !important;
+  }
+}
+
+.show-in-desktop {
+  @include is-mobile-and-landscape {
+    display: none !important;
+  }
+
+  @include is-tablet {
+    display: none !important;
+  }
+
+  @include is-mobile {
+    display: none !important;
+  }
+
+  @include is-mini-mobile {
+    display: none !important;
+  }
+}
+
+.show-in-desktop-and-tablet {
+  @include is-mini-mobile {
+    display: none !important;
+  }
+
+  @include is-mobile {
+    display: none !important;
+  }
+  @include is-mobile-and-landscape {
+    display: none !important;
+  }
+}
+.show-in-small-desktop {
+  @include is-small-desktop {
+    display: block !important;
+  }
+}

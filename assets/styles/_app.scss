@@ -1,0 +1,123 @@
+input {
+  background-color: $white-color;
+  border: 1px solid $nikPrime-100;
+  &.input--rounded {
+    border-radius: 6px !important;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+.scroll-thin {
+  // Firefox
+  scrollbar-width: thin;
+
+  // Chrome, Safari, ...
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $nikPrime-100;
+    border-radius: 20px;
+  }
+}
+.location-time{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: right;
+  color: #5C5F5F;
+}
+* {
+  font-family: Yekan Bakh FaNum
+}
+.txt-justify{
+  text-align: justify;
+  direction: rtl;
+}
+.btn-secondary {
+  color: #000;
+  background-color: transparent;
+  border:none;
+}
+.dropdown-toggle::after{
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-style: solid;
+  border-width: 0.15rem 0.15rem 0 0;
+  border-color: #000;
+  transform: rotate(135deg);
+  margin-right: 4px;
+}
+
+.btn-secondary.focus, .btn-secondary:focus, .btn-secondary:hover, .btn-secondary:focus-visible {
+  color: #000;
+  background-color: transparent;
+  border:none;
+  box-shadow:none!important;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+  color: #000;
+  background-color: transparent;
+  border:none
+}
+.dropdown-menu {
+  left: 50%;
+  transform: translate(-50%, 3px);
+  border: transparent;
+  border-radius: 6px;
+  transition: opacity 1s ease;
+  opacity: 0;
+  padding: 0;
+  @include is-not-desktop {
+    min-width: 8rem;
+    font-size: 0.9rem;
+  }
+}
+.dropdown-menu {
+  left: 50%;
+  top: 97%;
+  background-color: #f9f9f9;
+  transform: translate(-50%, 3px);
+  border: transparent;
+  border-radius: 6px;
+  transition: opacity 1s ease;
+  opacity: 0;
+  padding: 0;
+}
+.dropdown-item {
+  color: white;
+  text-align: center;
+}
+.dropdown-item:hover {
+  background-color: white;
+  color: white;
+}
+
+.dropdown-menu.show {
+  transition: opacity 1s ease;
+  opacity: 1;
+}
+
+.bg-image{
+  background-color: #D8DADB;
+  border-radius: 24px;
+}
+.form-title{
+  color: #C00004;
+  //styleName: sfm/typescale/fa/title/medium/heavy;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 24px;
+}
+
+.border-24{
+  border-radius: 24px;
+}
+.card--box{
+  background: #FFFFFF;
+  border-radius: 24px;
+}
